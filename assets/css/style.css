@@ -9,16 +9,13 @@ body {
     margin: 0;
     padding: 0;
 }
-html {
-
-    scroll-behavior: smooth;
-}
  a {
      text-decoration: none;
      color: red;
  }
 
 .setbarlateral {
+    max-width: 100%;
     width: 18rem;
     min-height: 55vh;
     background-color: white;
@@ -57,6 +54,7 @@ html {
     background-color: white;
     margin-left: 353px;
     margin-top: 50px;
+    max-width: 100%;
 }
 
 .navbartop {
@@ -361,4 +359,126 @@ footer  {
     box-shadow: 0 0 0 4px rgb(0 0 0/  10%);
     font-size: 1.4rem;
 
+}
+
+@media (max-width:800px) {
+    .body-main {
+       margin: 0 auto;
+       height: auto;
+       gap: 2rem;
+       margin: 0 auto;
+       
+    }
+    .setbarlateral {
+        display: none;
+    }
+    .navbartop {
+      display: none;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .img-content {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .bnt-1, .bnt-2, .bnt-3 {
+        max-width: 100%;
+        margin: 0 auto;
+        width: 350px;
+        align-items: center;
+        margin-top: 6px;
+    }
+    .img-2 {
+        margin: 0 50px;
+    }
+    .main-content2 h2{
+        margin-top: 1rem;
+        font-size: 1.3rem;
+
+    }
+    .footer {
+        max-width: 100%;
+        margin: 0 auto;
+        font-size: 1rem;
+        
+    }
+    .img-3 {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .bnt-2 {
+        margin-bottom: 2rem;
+        max-width: 20%;
+    }
+    
+}
+.close-menu {
+  display: none;
+
+}
+
+@media(max-width:800px){
+    .menu {
+        bottom: 0;
+        text-align: center;
+
+    }
+    .menu-content {
+        height: 100vh;
+
+    }
+
+    .menu {
+        display: none;
+    }
+    .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: #f7f8fa;
+        color: rgb(36, 161, 219);
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        text-align: center;
+        padding: 0.2rem;
+        cursor: pointer;
+    }
+
+    .close-menu:checked~.menu {
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after {
+        content: 'x';
+    }
+
+    .cookies-container {
+        width: 350px;
+        height: auto;
+    }
+
+    .cookie-content {
+        grid-template-columns: 1fr;
+        width: 250px;
+        height: auto;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    
+    .bnt-5 {
+        width: 90px;
+        height: 90px;
+    }
 }
