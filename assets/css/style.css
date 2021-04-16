@@ -58,7 +58,7 @@ body {
 }
 
 .navbartop {
-    width: 78.9rem;
+    width: 100%;
     background-color: rgb(55, 157, 241);
     height: 55px;
     align-items: center;
